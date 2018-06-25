@@ -74,7 +74,7 @@ x.y.z
   update src/app/app.module.ts (390 bytes)
 ```
   
-### Components
+## Components
 
 * controls a patch of screen
 * Passing data into components
@@ -180,3 +180,25 @@ x.y.z
 * @Output + Event Binding
 * Services
 * By Creating object of parent class
+
+## Directive
+* Components are directives
+
+* Component Directives
+	* Templates associated
+	* Business Logic
+	* Style
+* Attribute Directives
+	* do not make anychange in the DOM
+	* they may give color style
+	* add or remove classes from the element
+	```
+	for eg.  ngStyle, ngClass
+	```
+* Structural Directive
+	* ngIf, ngFor, ngSwitch
+	* manipulate DOM
+	* all structural are prefixed with asterisk like *ngFor
+	
+
+
