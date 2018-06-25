@@ -66,11 +66,13 @@ x.y.z
 
 `ng generate component user`
 
-  `create src/app/user/user.component.html (23 bytes)
+```
+  create src/app/user/user.component.html (23 bytes)
   create src/app/user/user.component.spec.ts (614 bytes)
   create src/app/user/user.component.ts (261 bytes)
   create src/app/user/user.component.css (0 bytes)
-  update src/app/app.module.ts (390 bytes)`
+  update src/app/app.module.ts (390 bytes)
+```
   
 ### Components
 
