@@ -66,8 +66,29 @@ x.y.z
 
 `ng generate component user`
 
-  create src/app/user/user.component.html (23 bytes)
+  `create src/app/user/user.component.html (23 bytes)
   create src/app/user/user.component.spec.ts (614 bytes)
   create src/app/user/user.component.ts (261 bytes)
   create src/app/user/user.component.css (0 bytes)
-  update src/app/app.module.ts (390 bytes)
+  update src/app/app.module.ts (390 bytes)`
+  
+### Components
+
+* controls a patch of screen
+* Passing data into components
+	* property binding - syntax - [] also {{}} expression binding
+	* event binding - syntax - ()
+	* two way data binding - no default support 
+	* to achieve two way binding we club both [] ()
+
+### Add bootstrap library
+`npm install bootstrap@3 --save`
+
+* use angular-cli.json to include bootstrap 
+
+```
+"styles": [
+        "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+        "styles.css"
+      ]
+```
