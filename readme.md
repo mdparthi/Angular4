@@ -12,8 +12,7 @@
 ### navigate to angular4-demo and run the app 
 `ng serve`
 
-
-### it launches the app here http://localhost:4200/
+* it launches the app here http://localhost:4200/
 
 ### package.json
 * use community developed project
@@ -25,7 +24,7 @@
 	
 ### versioning semver.org
 
-`
+```
 x.y.z
 1.0.0
 | | |
@@ -34,7 +33,8 @@ x.y.z
 | |____ backward compatible
 |
 |______ major version and do not support previous
-`
+```
+
 
 
 ### angular-cli.json
@@ -48,3 +48,26 @@ x.y.z
 
 * AppModule - RootModule usually loads the root component to the application
 * Each module can have own directive, services and pipes
+
+
+* NgModule
+	* declarations
+		* Pipe
+		* Directive
+		* Component
+	* imports
+		* Modules
+	* providers
+		* register the 
+	* bootstrap
+		* load the component for which the selector is avilable over the index
+		
+### create new component
+
+`ng generate component user`
+
+  create src/app/user/user.component.html (23 bytes)
+  create src/app/user/user.component.spec.ts (614 bytes)
+  create src/app/user/user.component.ts (261 bytes)
+  create src/app/user/user.component.css (0 bytes)
+  update src/app/app.module.ts (390 bytes)
