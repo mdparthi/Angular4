@@ -144,7 +144,9 @@ x.y.z
 	```
 	
 	* user.component.ts
-	``` import { Component, OnInit, `Input` } from '@angular/core';```
+	
+	``` import { Component, OnInit, `Input` } from '@angular/core';
+	```
 	
 	```
 	export class UserComponent implements OnInit {
@@ -168,3 +170,13 @@ x.y.z
 * ngAfterContentChecked - 
 * ngAfterViewInit - 
 * ngAfterViewChanged - 
+
+### Digest Cycle
+
+* whenever a class is changed it invokes the detector class which trigger the digest cycle
+
+### Child to Parent Communication
+
+* @Output + Event Binding
+* Services
+* By Creating object of parent class
