@@ -21,3 +21,20 @@
 	 needed at the time of deployment
 * dev dependencies
 	needed only for development
+	
+### versioning semver.org
+
+x.y.z
+1.0.0
+| | |
+| | |__ patching
+| | 
+| |____ backward compatible
+|
+|______ major version and do not support previous
+
+
+### angular-cli.json
+* index.html will be the only file served 
+* main.ts to load the modules
+* style - global stylesheet
