@@ -118,3 +118,40 @@ x.y.z
 ### Nested Components
 * Data Projection -> Parent Component to Child Component
 * @Input + Property Binding
+
+* Data Projection
+	* <ng-content> </ng-content> child componenet will receive parent component data
+	
+	```
+	<app-user>
+	  <header> Header Info </header>
+	  <main> Main Info</main>
+	  <footer class="footer-sec">Footer Info</footer>
+   </app-user>
+	```
+	
+	```
+	<div class="container">
+    <ng-content select=".footer-sec" ></ng-content>
+	</div>
+	```
+* @Input
+	
+	* app.component.ts
+	
+	```
+	<app-user [title]="title">
+	```
+	
+	* user.component.ts
+	* import { Component, OnInit, `Input` } from '@angular/core';
+	
+	```
+	export class UserComponent implements OnInit {
+	@Input('title') title : string;
+	```
+	
+	* user.component.html
+	```
+	 User {{title}} works
+	```
