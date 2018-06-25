@@ -14,3 +14,10 @@ ng serve
 
 # it launches the app here http://localhost:4200/
 
+# package.json
+* use community developed project
+* also to expose self developed code to the community
+* dependencies
+	 needed at the time of deployment
+* dev dependencies
+	neededn only for development
