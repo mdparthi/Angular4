@@ -144,7 +144,7 @@ x.y.z
 	```
 	
 	* user.component.ts
-	* import { Component, OnInit, `Input` } from '@angular/core';
+	``` import { Component, OnInit, `Input` } from '@angular/core';```
 	
 	```
 	export class UserComponent implements OnInit {
@@ -155,3 +155,16 @@ x.y.z
 	```
 	 User {{title}} works
 	```
+	
+* Smart Componet - root component sends to child component
+* Dump Component / Presentational component - for populating the UI
+
+### Component lifecycle
+
+* ngOnChanges - whenever changes in input data property, which will accept parameter of changes
+* ngOnInit - when components loaded  initalized in the browser only once
+* ngDoCheck  - when change in data binding
+* ngAfterContentInit - when it recieves content using ng-content
+* ngAfterContentChecked - 
+* ngAfterViewInit - 
+* ngAfterViewChanged - 
