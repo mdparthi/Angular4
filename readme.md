@@ -22,7 +22,7 @@
 * dev dependencies
 	needed only for development
 	
-### versioning semver.org
+### example of versioning https://semver.org/
 
 ```
 x.y.z
@@ -94,3 +94,27 @@ x.y.z
         "styles.css"
       ]
 ```
+
+* Example of attribute one way binding fromt the user model
+	* <img [src]="user.image" class="img-responsive img-rounded">
+
+### Explicit property binding + event binding
+	
+```
+<input type="number" 
+              [value]="user.votes"
+              (change)="user.votes=$event.target.value">
+```
+
+### [(ngModel)] - syntax known as banana in the box
+	* property binding + event binding
+
+# Two way binding can be achieved using ngModel
+
+```
+<input type="number" [(ngModel)]="user.votes">
+```
+
+### Nested Components
+* Data Projection -> Parent Component to Child Component
+* @Input + Property Binding
