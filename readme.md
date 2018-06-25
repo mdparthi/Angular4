@@ -45,3 +45,6 @@ x.y.z
 ### Two modes dev mode and production mode
 * dev - angular cycle run twice
 * prod - angular cycle run once
+
+* AppModule - RootModule usually loads the root component to the application
+* Each module can have own directive, services and pipes
