@@ -1,5 +1,5 @@
 ### For typescript compiling
-`npm install typescript`
+``` npm install typescript
 
 
 ### install angular version 5
