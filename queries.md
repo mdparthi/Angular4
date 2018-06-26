@@ -2,3 +2,4 @@
 - role based access 
 - debugging in the browser console
 - creating directives
+- production build ( aot )

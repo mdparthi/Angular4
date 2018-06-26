@@ -109,7 +109,7 @@ x.y.z
 ### [(ngModel)] - syntax known as banana in the box
 	* property binding + event binding
 
-# Two way binding can be achieved using ngModel
+### Two way binding can be achieved using ngModel
 
 ```
 <input type="number" [(ngModel)]="user.votes">
@@ -202,9 +202,9 @@ x.y.z
 	
 	* ngClass and ngStyle can be binded
 	
-### creating own directive
 
-* ngClass example 
+
+#### ngClass example 
 	* user.component.html
 	```
 	<p [ngClass]="{'feature' : false, 'transform' :true}" >Date of Birth : {{ user.dob}} </p>
@@ -237,4 +237,6 @@ x.y.z
 	<p [ngClass] = "myClasses">Date of Birth : {{ user.dob}} </p>
 	```
 
+### creating own directive
+ng generate directive hihlight
 
