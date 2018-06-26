@@ -207,14 +207,14 @@ x.y.z
 
 #### ngClass example 
 
-	* user.component.html
+* user.component.html
 	
 	```
 	<p [ngClass]="{'feature' : false, 'transform' :true}" >Date of Birth : {{ user.dob}} </p>
 	
 	```
 	
-	* user.component.css
+* user.component.css
 	
 	```
 	.feature {
@@ -225,8 +225,8 @@ x.y.z
 	}
 	```
 	
-	* dynamic style
-	* user.component.ts
+* dynamic style
+* user.component.ts
 	
 	```
 		myClasses = {
@@ -235,7 +235,7 @@ x.y.z
 	  }
 	```
 	
-	* user.component.html
+* user.component.html
 	
 	```
 	<p [ngClass] = "myClasses">Date of Birth : {{ user.dob}} </p>
@@ -247,7 +247,7 @@ x.y.z
 	ng generate directive highligh
 	```
 	
-	* examples of attribute directive
+* examples of attribute directive
 	
 
 	
@@ -266,7 +266,7 @@ x.y.z
 	@HostBinding('style.backgroundColor') bgColor : any;
 	```
 	
-	* user.component.html
+* user.component.html
 	
 	```
 	<h1 appHighlight [defaultColor]="'yellow'">{{user.firstName}} {{user.lastName}} </h1>
