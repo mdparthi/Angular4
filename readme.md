@@ -145,7 +145,8 @@ x.y.z
 	
 	* user.component.ts
 	
-	``` import { Component, OnInit, `Input` } from '@angular/core';
+	``` 
+	import { Component, OnInit, `Input` } from '@angular/core';
 	```
 	
 	```
@@ -238,5 +239,32 @@ x.y.z
 	```
 
 ### creating own directive
-ng generate directive hihlight
+	
+	```
+	ng generate directive hihlight
+	```
+	* examples of attribute directive
+	
+	*
+	```
+	 constructor(private elementRef : ElementRef,
+                private renderer : Renderer2){
+        // this.elementRef.nativeElement.style.backgroundColor = "green";
+        // this.renderer.setStyle(this.elementRef.nativeElement,
+        //                         'background-color', this.defaultColor)
+    }
+	```
+	
+	* OR
+	```
+	@HostBinding('style.backgroundColor') bgColor : any;
+	```
+	
+	* user.component.html
+	
+	```
+	<h1 appHighlight [defaultColor]="'yellow'">{{user.firstName}} {{user.lastName}} </h1>
+	```
+	
+	
 
