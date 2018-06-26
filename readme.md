@@ -206,7 +206,9 @@ x.y.z
 
 
 #### ngClass example 
+
 	* user.component.html
+	
 	```
 	<p [ngClass]="{'feature' : false, 'transform' :true}" >Date of Birth : {{ user.dob}} </p>
 	```
@@ -243,9 +245,11 @@ x.y.z
 	```
 	ng generate directive hihlight
 	```
+	
 	* examples of attribute directive
 	
-	*
+
+	
 	```
 	 constructor(private elementRef : ElementRef,
                 private renderer : Renderer2){
@@ -256,6 +260,7 @@ x.y.z
 	```
 	
 	* OR
+	
 	```
 	@HostBinding('style.backgroundColor') bgColor : any;
 	```
