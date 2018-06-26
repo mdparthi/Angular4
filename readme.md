@@ -211,6 +211,7 @@ x.y.z
 	
 	```
 	<p [ngClass]="{'feature' : false, 'transform' :true}" >Date of Birth : {{ user.dob}} </p>
+	
 	```
 	
 	* user.component.css
@@ -243,7 +244,7 @@ x.y.z
 ### creating own directive
 	
 	```
-	ng generate directive hihlight
+	ng generate directive highligh
 	```
 	
 	* examples of attribute directive
