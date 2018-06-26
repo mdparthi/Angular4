@@ -1,3 +1,6 @@
+###### Ref : https://github.com/synergy2411/sg3-demo
+###### REf : chrome extension : augury : https://augury.angular.io/
+
 ### For typescript compiling
 `npm install typescript`
 
@@ -241,11 +244,6 @@ x.y.z
 	<p [ngClass] = "myClasses">Date of Birth : {{ user.dob}} </p>
 	```
 
-### creating own directive
-	
-	```
-	ng generate directive highligh
-	```
 	
 * examples of attribute directive
 	
@@ -260,7 +258,9 @@ x.y.z
     }
 	```
 	
-	* OR
+	```
+	OR
+	```
 	
 	```
 	@HostBinding('style.backgroundColor') bgColor : any;
@@ -272,5 +272,50 @@ x.y.z
 	<h1 appHighlight [defaultColor]="'yellow'">{{user.firstName}} {{user.lastName}} </h1>
 	```
 	
+* command to generate directive without test
 	
+	```
+	ng g d directive/unless --spec false
+	```
 
+## Pipes
+
+* It does not change the data, it does change only the view of the data
+* Currency, Date, Uppercase, Lowercase, Number, JSON, Percent, Async
+* Custom Pipes
+	* Pure
+	* Impure
+* Aysnc : ability for the asynchronisaztion 
+
+* new pipe component
+```
+ ng g c pipe-demo --spec false
+ ng g p pipes/filter --spec false
+```
+
+```
+@Pipe({
+  name: 'filter',
+  pure : false
+})
+```
+
+## Forms
+
+* Template driven form
+	* validation logic inside the template
+	* represented as ngForm
+	* Eg : login form 
+* Module driven form
+	* app logic resies inside component
+	* also known as reactive forms
+	* angular validation logic
+	* Eg register form
+	
+```
+ng g c auth/login --spec false
+
+ng g c auth/register --spec false
+```
+
+	
