@@ -327,3 +327,14 @@ ng g c auth/register --spec false
 * Root Module - Same instance of service is available app-wide
 * Root Component - Same instance of service is available for all componenets ( but not for other services)
 * Other component - Same instance of service is avialble for the component and it's own child components
+
+## Firebase
+
+```
+npm install firebase --save
+
+ng g s services/auth -spec false
+
+```
+
+
