@@ -198,7 +198,43 @@ x.y.z
 * Structural Directive
 	* ngIf, ngFor, ngSwitch
 	* manipulate DOM
-	* all structural are prefixed with asterisk like *ngFor
+	* all structural are prefixed with asterisk like *ngFor 
 	
+	* ngClass and ngStyle can be binded
+	
+### creating own directive
+
+* ngClass example 
+	* user.component.html
+	```
+	<p [ngClass]="{'feature' : false, 'transform' :true}" >Date of Birth : {{ user.dob}} </p>
+	```
+	
+	* user.component.css
+	
+	```
+	.feature {
+		border : 2px red solid;
+	}
+	.transform {
+		text-decoration: underline;
+	}
+	```
+	
+	* dynamic style
+	* user.component.ts
+	
+	```
+		myClasses = {
+		'feature' : true,
+		'transform': false
+	  }
+	```
+	
+	* user.component.html
+	
+	```
+	<p [ngClass] = "myClasses">Date of Birth : {{ user.dob}} </p>
+	```
 
 
