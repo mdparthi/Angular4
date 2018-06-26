@@ -3,3 +3,5 @@
 - debugging in the browser console
 - creating directives
 - production build ( aot )
+- navigation
+- angular guard

@@ -318,4 +318,12 @@ ng g c auth/login --spec false
 ng g c auth/register --spec false
 ```
 
-	
+## Services && DI
+
+* Angular DI is controlled  through @NgModule
+
+#### Hierarchical Injection
+
+* Root Module - Same instance of service is available app-wide
+* Root Component - Same instance of service is available for all componenets ( but not for other services)
+* Other component - Same instance of service is avialble for the component and it's own child components
