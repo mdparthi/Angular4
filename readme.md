@@ -1,5 +1,6 @@
 ###### Ref : https://github.com/synergy2411/sg3-demo
-###### REf : chrome extension : augury : https://augury.angular.io/
+###### Ref : chrome extension : augury : https://augury.angular.io/
+###### Ref : observable pattern : http://reactivex.io/
 
 ### For typescript compiling
 `npm install typescript`
@@ -337,4 +338,36 @@ ng g s services/auth -spec false
 
 ```
 
+## Observables
+
+```
+Data stream 
+-------------------------------------------------------->
+	|					|					|
+  Handle Data 		Handle Error 		Handle Completion
+		---------------- Observer --------------------
+```
+
+* page navigation, input, ..etc generates observable
+* angular mainly depends on two things observable and decorator
+* diff b/w promise & observable
+	* in promise it recieves always the full data 
+	* in observable it can partially subscribe and rest it can unsubscribe
+	* power of 
+
+* Ref for learning observable pattern http://reactivex.io/ 
+
+```
+ng g c obs-demo --spec false
+```
+
+* subscribe
+	* data handler
+	* error handler
+	* complete function 
+
+* interceptors ( belongs to common http module)
+	* inteceptors are services
+
+## Routing
 
