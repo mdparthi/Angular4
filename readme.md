@@ -2,12 +2,12 @@
 ## Angular Tutorial
 <sub>Updated : 27-Jun-2018</sub>
 
-###### Ref : Example : https://github.com/mdparthi/angular4-demo
+###### Ref : Example for the below details : https://github.com/mdparthi/angular4-demo
 
 
-<sub> Ref : chrome extension : augury : https://augury.angular.io/ </sub>
-<sub> Ref : observable pattern : http://reactivex.io/ </sub>
-<sub> Ref : angular book : https://legacy.gitbook.com/book/rangle-io/ngcourse2/details </sub>
+<sub> Ref : chrome extension : augury : https://augury.angular.io/ </sub> <br>
+<sub> Ref : observable pattern : http://reactivex.io/ </sub> <br>
+<sub> Ref : angular book : https://legacy.gitbook.com/book/rangle-io/ngcourse2/details </sub> 
 
 #### For typescript compiling
 `npm install typescript`
