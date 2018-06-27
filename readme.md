@@ -446,6 +446,12 @@ ng g c lazy/lazy --spec false
 * prevent cross-site scripting
 * use compiled template
 
+## Testing
+
+```
+ng test
+```
+
 ## Build And Deploy
 
 ```
