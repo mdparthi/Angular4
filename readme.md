@@ -2,7 +2,9 @@
 ## Angular Tutorial
 <sub>Updated : 27-Jun-2018</sub>
 
-###### Ref : https://github.com/synergy2411/sg3-demo
+###### Ref : Example : https://github.com/mdparthi/angular4-demo
+
+###### Ref : Original : https://github.com/synergy2411/sg3-demo
 ###### Ref : chrome extension : augury : https://augury.angular.io/
 ###### Ref : observable pattern : http://reactivex.io/
 ###### Ref : angular book : https://legacy.gitbook.com/book/rangle-io/ngcourse2/details
