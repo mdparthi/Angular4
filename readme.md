@@ -343,9 +343,10 @@ ng g s services/auth -spec false
 ```
 Data stream 
 -------------------------------------------------------->
-	|					|					|
+       |                 |                    |
   Handle Data 		Handle Error 		Handle Completion
-		---------------- Observer --------------------
+  
+     ---------------- Observer ------------------
 ```
 
 * page navigation, input, ..etc generates observable
@@ -372,8 +373,12 @@ ng g c obs-demo --spec false
 ## Routing
 
 * Two strategy
-	* # 
-	* /
+
+```
+	# - Hash notation
+	/ - Html 5 notation
+```
+
 * Deep linking is possible
 
 * check base href tag in index file - index.html
@@ -399,3 +404,16 @@ ng g c product/specification --spec false
 ```
 
 ## Module
+
+* to group components, directives , pipes and services
+* it can be instantiated lazily ( on demand)
+
+* Module Types
+	* Root Module 
+		- this imports Browser Module
+	* Feature Module 
+		- import Common Module and should not have Bootstrap array and Module Decorator
+
+```
+ng g m employee
+```
