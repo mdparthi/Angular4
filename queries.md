@@ -1,7 +1,7 @@
 #### queries to clarify
-- role based access 
-- debugging in the browser console - - done
+- role based access - ?
+- debugging in the browser console -  partially done
 - creating directives - done 
-- production build ( aot )
+- production build ( aot )  - done
 - navigation - done
-- angular router guard -
+- angular router guard - done
