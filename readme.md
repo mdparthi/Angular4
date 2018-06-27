@@ -5,9 +5,9 @@
 ###### Ref : Example : https://github.com/mdparthi/angular4-demo
 
 
-###### Ref : chrome extension : augury : https://augury.angular.io/
-###### Ref : observable pattern : http://reactivex.io/
-###### Ref : angular book : https://legacy.gitbook.com/book/rangle-io/ngcourse2/details
+<sub> Ref : chrome extension : augury : https://augury.angular.io/ </sub>
+<sub> Ref : observable pattern : http://reactivex.io/ </sub>
+<sub> Ref : angular book : https://legacy.gitbook.com/book/rangle-io/ngcourse2/details </sub>
 
 #### For typescript compiling
 `npm install typescript`
@@ -459,4 +459,4 @@ ng build --prod --aot
 ```
 
 
-####### Ref Also : https://github.com/synergy2411/sg3-demo
+<sub> Ref Also : https://github.com/synergy2411/sg3-demo </sub>
