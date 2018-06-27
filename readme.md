@@ -1,25 +1,29 @@
+
+## Angular Tutorial
+<sub>Updated : 27-Jun-2018</sub>
+
 ###### Ref : https://github.com/synergy2411/sg3-demo
 ###### Ref : chrome extension : augury : https://augury.angular.io/
 ###### Ref : observable pattern : http://reactivex.io/
 ###### Ref : angular book : https://legacy.gitbook.com/book/rangle-io/ngcourse2/details
 
-### For typescript compiling
+#### For typescript compiling
 `npm install typescript`
 
 
-### install angular version 5
+#### install angular version 5
 
 `npm install @angular/cli@1.7 -g`
 
-### create new angular project
+#### create new angular project
 `ng new angular4-demo`
 
-### navigate to angular4-demo and run the app 
+#### navigate to angular4-demo and run the app 
 `ng serve`
 
 * it launches the app here http://localhost:4200/
 
-### package.json
+#### package.json
 * use community developed project
 * also to expose self developed code to the community
 * dependencies
@@ -27,7 +31,7 @@
 * dev dependencies
 	needed only for development
 	
-### example of versioning https://semver.org/
+#### example of versioning https://semver.org/
 
 ```
 x.y.z
@@ -42,12 +46,12 @@ x.y.z
 
 
 
-### angular-cli.json
+#### angular-cli.json
 * index.html will be the only file served 
 * main.ts to load the modules using the library platformBrowserDynamic
 * style - global stylesheet
 
-### Two modes dev mode and production mode
+#### Two modes dev mode and production mode
 * dev - angular cycle run twice
 * prod - angular cycle run once
 
@@ -67,7 +71,7 @@ x.y.z
 	* bootstrap
 		* load the component for which the selector is avilable over the index
 		
-### create new component
+#### create new component
 
 `ng generate component user`
 
@@ -88,7 +92,7 @@ x.y.z
 	* two way data binding - no default support 
 	* to achieve two way binding we club both [] ()
 
-### Add bootstrap library
+#### Add bootstrap library
 `npm install bootstrap@3 --save`
 
 * use angular-cli.json to include bootstrap 
@@ -103,7 +107,7 @@ x.y.z
 * Example of attribute one way binding fromt the user model
 	* <img [src]="user.image" class="img-responsive img-rounded">
 
-### Explicit property binding + event binding
+#### Explicit property binding + event binding
 	
 ```
 <input type="number" 
@@ -111,16 +115,16 @@ x.y.z
               (change)="user.votes=$event.target.value">
 ```
 
-### [(ngModel)] - syntax known as banana in the box
+#### [(ngModel)] - syntax known as banana in the box
 	* property binding + event binding
 
-### Two way binding can be achieved using ngModel
+#### Two way binding can be achieved using ngModel
 
 ```
 <input type="number" [(ngModel)]="user.votes">
 ```
 
-### Nested Components
+## Nested Components
 * Data Projection -> Parent Component to Child Component
 * @Input + Property Binding
 
@@ -167,7 +171,7 @@ x.y.z
 * Smart Componet - root component sends to child component
 * Dump Component / Presentational component - for populating the UI
 
-### Component lifecycle
+#### Component lifecycle
 
 * ngOnChanges - whenever changes in input data property, which will accept parameter of changes
 * ngOnInit - when components loaded  initalized in the browser only once
@@ -177,11 +181,11 @@ x.y.z
 * ngAfterViewInit - 
 * ngAfterViewChanged - 
 
-### Digest Cycle
+#### Digest Cycle
 
 * whenever a class is changed it invokes the detector class which trigger the digest cycle
 
-### Child to Parent Communication
+#### Child to Parent Communication
 
 * @Output + Event Binding
 * Services
@@ -445,4 +449,5 @@ ng g c lazy/lazy --spec false
 ```
 ng build --prod --aot
 ```
+
 
