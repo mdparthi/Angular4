@@ -5,3 +5,5 @@
 - production build ( aot )  - done
 - navigation - done
 - angular router guard - done
+
+<sub>synergy2411@outlook.com</sub>
