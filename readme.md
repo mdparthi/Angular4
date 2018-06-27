@@ -1,6 +1,7 @@
 ###### Ref : https://github.com/synergy2411/sg3-demo
 ###### Ref : chrome extension : augury : https://augury.angular.io/
 ###### Ref : observable pattern : http://reactivex.io/
+###### Ref : angular book : https://legacy.gitbook.com/book/rangle-io/ngcourse2/details
 
 ### For typescript compiling
 `npm install typescript`
@@ -421,4 +422,22 @@ ng g m employee
 ##### Lazy Module
 
 * need not to load in the root module
-* 
+
+```
+ng g m lazy --spec false
+
+ng g c lazy/lazy --spec false
+```
+
+## Debugginh Angular Apps
+
+* prevent bugs with Typescript
+* Inspect data with json pipe
+* using Augury chrome extension
+
+## Securing Angular Apps
+
+* prevent cross-site scripting
+* use compiled template
+
+
