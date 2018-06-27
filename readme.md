@@ -397,3 +397,5 @@ ng g c product/overview --spec false
 ng g c product/specification --spec false
 
 ```
+
+## Module
