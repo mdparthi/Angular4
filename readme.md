@@ -341,10 +341,10 @@ ng g s services/auth -spec false
 ## Observables
 
 ```
-Data stream 
+                     Data stream 
 -------------------------------------------------------->
        |                 |                    |
-  Handle Data 		Handle Error 		Handle Completion
+   Handle Data     Handle Error        Handle Completion
   
      ---------------- Observer ------------------
 ```
@@ -417,3 +417,8 @@ ng g c product/specification --spec false
 ```
 ng g m employee
 ```
+
+##### Lazy Module
+
+* need not to load in the root module
+* 
