@@ -371,3 +371,29 @@ ng g c obs-demo --spec false
 
 ## Routing
 
+* Two strategy
+	* # 
+	* /
+* Deep linking is possible
+
+* check base href tag in index file - index.html
+* configure routes with components - app.route.ts
+* mention about route app (include Router module)
+* set route links
+* provide space on template to load the component
+
+```
+ng g s services/login-gaurd --spec false
+
+ng g c product --spec false
+```
+
+* child route
+	* nested routes
+	
+```
+ng g c product/overview --spec false
+
+ng g c product/specification --spec false
+
+```
